@@ -53,23 +53,27 @@
 
 # ### **Problem 5: Print Even Numbers**
 
-# Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+# # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
 
-n = int(input("Pick a number: "))
+# n = int(input("Pick a number: "))
 
-for x in range(0,n+1,2):
-    print(x)
+# for x in range(0,n+1,2):
+#     print(x)
 
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
 
+# name = input("enter a string: ")
+# reversed_name = ""
+# for char in name:
+#     reversed_name = char + reversed_name
 
+# print(reversed_name)
+# # ### **Problem 7: Multiplication Table**
 
-# ### **Problem 7: Multiplication Table**
-
-# Ask the user for a number **n**, then print the **multiplication table** for n from
-# n × 1 up to n × 10.
+# # Ask the user for a number **n**, then print the **multiplication table** for n from
+# # n × 1 up to n × 10.
 
 
 
@@ -83,6 +87,25 @@ for x in range(0,n+1,2):
 # ### **Problem 9: Fibonacci Sequence**
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
+
+def fibbonacci(n):
+
+
+    if n==1 or n==2 :
+        return 1
+    
+
+    return fibbonacci(n-1)+fibbonacci(n-2)
+
+for i in range(1,10):
+    print(fibbonacci(i))
+
+
+
+
+
+
+
 
 
 
